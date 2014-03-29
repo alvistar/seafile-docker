@@ -18,8 +18,8 @@ First time initialization:
 
 Now run:
 
-    docker run -d -t --dns=127.0.0.1 -p 10001:1001 -p 8082:8082 -p 12001:12001 -p 8000:8000 --volumes-from seafile --link mysql:db alvistar/seafile
+    docker run -d -t --dns=127.0.0.1 -p 10001:10001 -p 8082:8082 -p 12001:12001 -p 8000:8000 --volumes-from seafile --link mysql:db alvistar/seafile
 
 If you want to access with ssh and insecure-key:
 
-    docker run -d -t --dns=127.0.0.1 -p 10001:1001 -p 8082:8082 -p 12001:12001 -p 8000:8000 --volumes-from seafile --link mysql:db alvistar/seafile /sbin/my_init --enable-insecure-key
+    docker run -d -t --dns=127.0.0.1 -p 10001:10001 -p 8082:8082 -p 12001:12001 -p 8000:8000 --volumes-from seafile --link mysql:db alvistar/seafile /sbin/my_init --enable-insecure-key
